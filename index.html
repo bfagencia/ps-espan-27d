@@ -172,5 +172,23 @@ Por favor, use o formulário abaixo para reportar uma violação que você acred
         $.ajax(`${base_url}/${url}?no_redirect`);
     });
 </script>
+    
+    <script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('albertoflor.com.br/pagamento') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
 
 </body></html>
