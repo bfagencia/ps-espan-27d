@@ -120,23 +120,6 @@ var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"s
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-8d7ce9e elementor-widget elementor-widget-html" data-id="8d7ce9e" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<script>
-(function() {
-     const utmParamQueryString = new URLSearchParams(window.location.search);
-     if (utmParamQueryString.toString()) {
-          var navLinks = document.querySelectorAll('a');
-          navLinks.forEach(function(item) {
-               if (item.href.indexOf('mapajudaico.com/pagamento') !== -1) {
-                    if (item.href.indexOf('?') === -1) {
-                         item.href += '?' + utmParamQueryString.toString();
-                    } else {
-                         item.href += '&' + utmParamQueryString.toString();
-                    }
-               }
-          });
-     }
-})();
-</script>
 		</div>
 				</div>
 					</div>
@@ -242,5 +225,25 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script src="https://mapajudaico.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.7.3" id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
 	
 
+	
+	
+	
+<script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('mapajudaico.com/pagamento') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
 
 <!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me --></body></html>
