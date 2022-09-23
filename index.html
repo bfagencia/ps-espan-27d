@@ -128,48 +128,6 @@ Por favor, use o formulário abaixo para reportar uma violação que você acred
 <script>(function(){var js = "window['__CF$cv$params']={r:'74de70f68e7ea5b0',m:'8niK17cgMW0KZfrBbGJy39IMJyuxLXyk8FY0hhebOEw-1663717594-0-AaJwtGxHiTs4xRjh9CDRnWN/ECoXp3cVq1G7ALMvmSxXlMX2hQaOShLeomoMMwO0NEiOAuaQON7pdhAnMxpSducphxq2HmZGp54NQWMd+n/lpZHd+uQkksV9dOr1fruCgg==',s:[0x87010e1997,0x537ca086f4],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;74de70f68e7ea5b0&quot;,&quot;token&quot;:&quot;7a94cfbd177f47ff838aeeddc2944401&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
 
 
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-208863049-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-208863049-2');
-</script>
-<input type="hidden" id="url" name="url" value="https://linklist.bio">
-<input type="hidden" name="_token" value="slO3hpefVuuZs1lq1fG3wgrTIMJIFS8XEctDGcV4">
-<input type="hidden" name="number_decimal_point" value=",">
-<input type="hidden" name="number_thousands_separator" value=".">
-<script>
-    console.log("https://linklist.bio/report-violation-feedback");
-    $('form[name="report-violation"]').on('submit', event => {
-
-        $('button[name=submit]').prop('disabled', true);
-
-        $.ajax({
-            type: 'POST',
-            url: 'report-violation',
-            data: $(event.currentTarget).serialize(),
-            success: (data) => {
-                setTimeout(() => (window.location.href = "https://linklist.bio/report-violation-feedback"), 100);
-            },
-            dataType: 'json'
-        });
-
-        event.preventDefault();
-    })
-</script>
-<script>
-    /* Internal tracking for biolink links */
-    $('[data-location-url]').on('click', event => {
-
-        let base_url = $('[name="url"]').val();
-        let url = $(event.currentTarget).data('location-url');
-
-        $.ajax(`${base_url}/${url}?no_redirect`);
-    });
-</script>
-
 <script>
 (function() {
      const utmParamQueryString = new URLSearchParams(window.location.search);
